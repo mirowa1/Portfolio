@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maxwell Irowa — portfolio. Multi-agent AI (SupportBot) and traffic intelligence (SmartRoute)." />
+  <title>Maxwell Irowa — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Maxwell Irowa</a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy">
+        <p class="brand-mark">Maxwell Irowa</p>
+        <h1>Building agentic systems that stay grounded in real data.</h1>
+        <p class="lede">Graduate work in Agentic AI and Data Management — multi-agent support pipelines and event-day route intelligence.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit"></div>
+        <div class="grid-glow"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <header class="section-head">
+        <h2>Selected work</h2>
+        <p>Two course projects with live demos, evaluation, and measurable outcomes.</p>
+      </header>
+
+      <article class="project" id="supportbot">
+        <div class="project-copy">
+          <p class="eyebrow">CIS 8045 · Agentic AI</p>
+          <h3>SupportBot</h3>
+          <p>
+            Multi-agent customer support for e-commerce. A four-agent pipeline —
+            Router → Retriever (FAISS RAG) → Generator → Critic — drafts grounded
+            replies on Olist order data and escalates when it cannot answer safely.
+          </p>
+          <ul class="bullets">
+            <li>LangChain · GPT-3.5 · FAISS · MiniLM · Gradio · LangSmith</li>
+            <li>Pilot eval (n=15): 100% task success · HHH 3.20 / 4.27 / 5.00 · 53.3% escalation</li>
+            <li>Documented failure mode (R1): missing order ID can hallucinate details</li>
+          </ul>
+          <p class="stack-note">Stack: Python, LangChain, OpenAI, FAISS, Gradio</p>
+        </div>
+        <figure class="project-media">
+          <img src="images/supportbot-architecture.png" alt="SupportBot four-agent architecture diagram" width="1200" height="280" />
+          <img src="images/supportbot-gradio.png" alt="SupportBot Gradio chat interface" width="900" height="800" />
+        </figure>
+      </article>
+
+      <article class="project reverse" id="smartroute">
+        <div class="project-copy">
+          <p class="eyebrow">CIS 8040 · Data Management</p>
+          <h3>SmartRoute</h3>
+          <p>
+            Traffic-aware route recommendation for event days. MySQL stores road
+            segments and speeds; congestion is flagged when average speed drops
+            below half the limit. Compares driver options and recommends the clearer path.
+          </p>
+          <ul class="bullets">
+            <li>World Cup demo: Maxwell → Mercedes-Benz Stadium</li>
+            <li>Northside Dr congested (12.5 / 35 mph) · Marietta St clear</li>
+            <li>Recommendation: Option B — 18 min vs 28 min on the jammed path</li>
+            <li>NL→SQL tool: ask in English, get SELECT-only answers from the same DB</li>
+          </ul>
+          <p class="stack-note">Stack: Python, MySQL, OpenAI (NL→SQL)</p>
+        </div>
+        <figure class="project-media">
+          <img src="images/smartroute-demo.png" alt="SmartRoute terminal recommendation output" width="1000" height="700" />
+          <img src="images/smartroute-llm.png" alt="SmartRoute natural language query results" width="1000" height="700" />
+        </figure>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        I’m Maxwell Irowa, a graduate student focused on agentic AI systems and
+        practical data applications. I care about pipelines that verify their own
+        answers, escalate when uncertain, and expose clear evidence for demos and evaluation.
+      </p>
+      <p class="skills-line">
+        LangChain · RAG · LangSmith · MySQL · Python · Gradio · Evaluation design
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Want to talk about these projects or collaboration?</p>
+      <a class="btn primary" href="mailto:maxwellirowa@gmail.com">Email Maxwell</a>
+      <a class="btn ghost" href="https://github.com/mirowa1" target="_blank" rel="noopener">GitHub</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Maxwell Irowa · Built for GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
