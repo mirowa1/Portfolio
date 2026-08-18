@@ -329,6 +329,15 @@ a {
   background: #071412;
 }
 
+/* CoreMax flagship gallery — 5 screenshots, 2-col grid */
+#coursework-coremax .project-media-gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#coursework-coremax .project-media-gallery img:first-child {
+  grid-column: 1 / -1;
+}
+
 .about {
   background: linear-gradient(180deg, rgba(18, 46, 42, 0.55), rgba(11, 28, 26, 0.2));
   border-top: 1px solid var(--line);
@@ -427,6 +436,14 @@ a {
   .project.reverse .project-copy,
   .project.reverse .project-media {
     order: initial;
+  }
+
+  #coursework-coremax .project-media-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  #coursework-coremax .project-media-gallery img:first-child {
+    grid-column: auto;
   }
 
   .nav {
