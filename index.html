@@ -51,8 +51,9 @@
             A full-stack student productivity platform — upload your syllabus, get your
             whole semester automatically organized. I designed and built it solo: the app
             extracts assignments, exams, and grade weights, builds a real-time calendar,
-            tracks grade projections against a personal goal grade, and generates AI study
-            guides and quizzes strictly grounded in the student's own uploaded materials.
+            tracks grade projections against a personal goal grade, generates AI study
+            guides and quizzes strictly grounded in the student's own uploaded materials,
+            and adds an in-app AI assistant plus ClassToExcel semester exports.
           </p>
           <ul class="bullets">
             <li>AI syllabus parser with anti-fabrication guardrails on every AI feature</li>
@@ -60,11 +61,12 @@
             <li>Real-time grade tracking with "what score do I need" calculations against a user-set goal grade</li>
             <li>HTML-first resume builder (preview, PDF, DOCX) after a JSON-based approach proved brittle in production</li>
             <li>Row-Level Security on every Supabase table, scoping all data to the authenticated user</li>
-            <li>Solo-founder compliance: Twilio A2P 10DLC, Google OAuth app verification, privacy/terms — Stripe freemium in progress</li>
-            <li>Debugged production-only Vercel serverless bugs (ESM/CJS) that never appeared locally</li>
+            <li>Solo-founder compliance: Twilio A2P 10DLC, Google OAuth app verification, privacy/terms — Stripe freemium live with customer portal</li>
+            <li>ClassToExcel — export a class or whole semester to a color-coded Excel spreadsheet</li>
+            <li>In-app AI assistant — ask about classes, deadlines, and grades from a chat bubble grounded in the user's own coursework</li>
             <li>Live: <a href="https://www.coremaxsystems.com" target="_blank" rel="noopener">coremaxsystems.com</a></li>
           </ul>
-          <p class="stack-note">Stack: Next.js 14 (App Router), Supabase, Claude API, Google Calendar OAuth, Twilio SMS, Vercel</p>
+          <p class="stack-note">Stack: Next.js 14 (App Router), Supabase, Claude API, Stripe, Google Calendar OAuth, ExcelJS, Twilio SMS, Vercel</p>
         </div>
         <figure class="project-media project-media-gallery">
           <img src="images/coremax-landing.png" alt="Coursework by CoreMax landing page with product hero and sign-up call to action" width="1400" height="900" />
